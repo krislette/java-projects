@@ -5,16 +5,16 @@ import javax.swing.JOptionPane;
 public class Bill {
 
     // Method for displaying the bill using a dialog box.
-    public double displayBill(Pizza PIE) {
+    public double displayBill(Pizza pie) {
         JOptionPane.showMessageDialog(null, "You ordered for " 
-                                      + PIE.getToppings()
+                                      + pie.getToppings()
                                       + " Pizza\nwith the size of " 
-                                      + PIE.getDiameter()
+                                      + pie.getDiameter()
                                       + " centimeter(s)\n"
                                       + "for the total price of PHP" 
-                                      + PIE.getPrice());
+                                      + pie.getPrice());
 
-        return PIE.getPrice();
+        return pie.getPrice();
     }
 
 }
